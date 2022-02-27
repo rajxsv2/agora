@@ -5,16 +5,25 @@
     <title>Video Call</title>
     <link rel="stylesheet" href="stylesagora.css">
     <script src="https://cdn.agora.io/sdk/release/AgoraRTCSDK-3.6.9.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Raleway', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <h1>
-        Video Call<br><small style="font-size: 14pt;">Powered by Agora.io</small>
+<body style="background-color:black"> 
+    <h1 style="text-shadow: 4px black ; color: rgb(255, 255, 255); font-family: 'Raleway',sans-serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0;">
+         Job Seeker and Job Provider Video Call Service<br><small style="font-size: 14pt;">Powered by Agora.io</small>
     </h1>
-    <h4>Local video</h4>
-    <div id="me"></div>
-    <h4>Remote video</h4>
-    <div id="remote-container">
+    <h4 style="text-shadow: 4px black ; color: rgb(255, 255, 255); font-family: 'Raleway',sans-serif; font-size: 25px; font-weight: normal; line-height: 48px; margin: 0;">You</h4>
+    <div id="me" style="box-shadow: 1rem white ;"></div>
+    <h4 style="text-shadow: 4px black ; color: rgb(255, 255, 255); font-family: 'Raleway',sans-serif; font-size: 25px; font-weight: normal; line-height: 48px; margin: 0;"> Them</h4>
+    <div id="remote-container" style="box-shadow: 1rem white ;">
     </div>
+
     <script src="agorascript.js"></script>
-</body>
+
 </html>
